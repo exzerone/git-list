@@ -1,0 +1,9 @@
+body{
+	background-color: lightblue;
+}
+
+.title{
+	top: 0;
+	background-color: black;
+	color: white;
+}
