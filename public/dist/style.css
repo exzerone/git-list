@@ -1,9 +1,7 @@
 body{
-	background-color: lightblue;
+	background-color: beige;
 }
 
-.title{
-	top: 0;
-	background-color: black;
-	color: white;
+.active {
+  background-color: #7f7373;
 }
