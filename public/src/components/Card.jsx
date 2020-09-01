@@ -2,8 +2,9 @@ import React from 'react';
 
 function Card(props){
 	const { user } = props;
+
 	return (
-		<div>
+		<div className="user_card">
 			<img alt="avatar" src={user.avatar_url} style={{height: '150px', width: '150px'}}/>
 			<div>
 				<h3>User: {user.login}</h3>
