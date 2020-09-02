@@ -5,9 +5,6 @@
 /.pnp
 .pnp.js
 
-# github key
-config.js
-
 # testing
 /coverage
 
