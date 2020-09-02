@@ -1,7 +1,5 @@
 Github List Fetcher
-by Chris Huang
 
+require node v12.xx
 
-
-Please run npm start in order to run the application
 
