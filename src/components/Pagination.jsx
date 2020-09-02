@@ -1,19 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const Page = styled.button`
+	height: 40px;
+	width: 40px;
+	cursor: pointer;
+`;
+
+const PageRow = styled.div`
+	margin: 25px 0;
+`;
+
 function Pagination ({totalPages, handleClick, page }){
 	
 	const pages = [...Array(totalPages).keys()].map(number => number + 1);
-	
-	const Page = styled.button`
-		height: 40px;
-		width: 40px;
-		cursor: pointer;
-	`;
-
-	const PageRow = styled.div`
-		margin: 25px 0;
-	`;
 
 	const nextPage = function(){
 		if (page + 1 <= totalPages){
@@ -35,7 +35,7 @@ function Pagination ({totalPages, handleClick, page }){
           key={number}
           href="/#"
           onClick={() => handleClick(number)}
-          className={`${page === number && 'active'}`}
+          className={`page ${page === number && 'active'}`}
         >
           {number}
         </Page>

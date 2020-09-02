@@ -6,6 +6,21 @@ import styled from 'styled-components';
 
 const Title = styled.h1`
 	text-align: center;
+	background-color: black;
+	color: white;
+	padding: 25px;
+	position: relative;
+	top: 1px;
+	margin-top: 0px;
+`;
+
+const ContentContainer = styled.div`
+	padding: 15px;
+`;
+
+const Loading = styled.div`
+	font-size: 16px;
+	margin: 30px 0;
 `;
 
 function App() {
@@ -33,15 +48,17 @@ function App() {
 	};
 
 	return (
-		<div>
-			<Title className="title">Github Users</Title>
-			<h2>Number of Users per page: {users.length}</h2>
-			{isLoading ? (
-				<div className="loading">Loading...</div>
-			) : (
-				<Pagination totalPages={20} handleClick={handleClick} page={page} />
-			)}
-			<CardList list={users} />
+		<div id="App">
+			<Title className="title">Github Users List</Title>
+			<ContentContainer className="content_container">
+				<h2>Number Of Users Per Page: {users.length}</h2>
+				{isLoading ? (
+					<Loading className="loading">Loading...</Loading>
+				) : (
+					<Pagination totalPages={20} handleClick={handleClick} page={page} />
+				)}
+				<CardList list={users} />
+			</ContentContainer>
 		</div>
 	);
 }

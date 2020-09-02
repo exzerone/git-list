@@ -4,16 +4,16 @@ import styled from 'styled-components';
 
 const Container = styled.div`
 	display: flex;
-	max-width: 1000px;
+	max-width: 1500px;
 	flex-wrap: wrap;
 	align-self: center;
 `;
 
-function CardList(props){
+function CardList({list}){
 	return (
 		<Container className="user_container">
 			{
-				props.list.map((user) => (
+				list.map((user) => (
 					<Card key={user.id} user={user}/>
 				))
 			}
