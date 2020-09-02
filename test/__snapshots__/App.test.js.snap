@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should render without crashing 1`] = `
+<div
+  id="App"
+>
+  <styled.h1
+    className="title"
+  >
+    Github Users List
+  </styled.h1>
+  <styled.div
+    className="content_container"
+  >
+    <h2>
+      Number Of Users Per Page: 
+      0
+    </h2>
+    <Pagination
+      handleClick={[Function]}
+      page={1}
+      totalPages={20}
+    />
+    <CardList
+      list={Array []}
+    />
+  </styled.div>
+</div>
+`;

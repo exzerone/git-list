@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card should render without crashing 1`] = `
+<styled.div
+  className="user_card"
+>
+  <styled.h3
+    className="user_title"
+  >
+    username: 
+    jvantuyl
+  </styled.h3>
+  <styled.div
+    className="user_description"
+  >
+    <img
+      alt="avatar"
+      src="https://avatars0.githubusercontent.com/u/101?v=4"
+      style={
+        Object {
+          "height": "175px",
+          "width": "225px",
+        }
+      }
+    />
+    <div>
+      <div>
+        Github Url: 
+        https://github.com/jvantuyl
+      </div>
+      <div>
+        Site Admin: 
+        No
+         
+      </div>
+    </div>
+  </styled.div>
+</styled.div>
+`;
