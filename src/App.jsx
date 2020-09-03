@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import Axios from 'axios';
+import ReactDOM from 'react-dom';
 import CardList from './components/CardList.jsx';
 import Pagination from './components/Pagination.jsx';
+import { getUsers, getUserDetail } from './github/index';
+import UserDetail from './components/UserDetail.jsx';
 import styled from 'styled-components';
 
 const Title = styled.h1`
@@ -27,24 +29,19 @@ function App() {
 	let [users, setUsers] = useState([]);
 	let [page, setPage] = useState(1);
 	let [isLoading, setIsLoading] = useState(false);
+	let [showModal, setShowModal] = useState(false);
+	let [userDtail, setUserDetail] = useState({});
 
 	useEffect(() => {
-		setIsLoading(true);
-		Axios.get('https://api.github.com/users', {
-			params: {
-				since: 30 * page - 30,
-			},
-		})
-		.then((response) => {
-			const users = response.data;
-			setUsers(users);
-			setIsLoading(false);
-		})
-		.catch((error) => console.log(error));
+		getUsers(30 * page - 30, 30, setIsLoading, setUsers);
 	}, [page]);
 
-	const handleClick = function (page) {
+	const handlePageClick = (page) => {
 		setPage(page);
+	};
+
+	const handleUserClick = (username) => {
+		getUserDetail({ username, setShowModal, setUserDetail });
 	};
 
 	return (
@@ -55,12 +52,24 @@ function App() {
 				{isLoading ? (
 					<Loading className="loading">Loading...</Loading>
 				) : (
-					<Pagination totalPages={20} handleClick={handleClick} page={page} />
+					<Pagination
+						totalPages={20}
+						handleClick={handlePageClick}
+						page={page}
+					/>
 				)}
-				<CardList list={users} />
+				<CardList list={users} handleUserClick={handleUserClick} />
+				{showModal ? (
+					<UserDetail
+						handleClose={() => {
+							setShowModal(false);
+						}}
+						{...userDtail}
+					/>
+				) : null}
 			</ContentContainer>
 		</div>
 	);
 }
 
-export default App;
+ReactDOM.render(<App />, document.getElementById('root'));
