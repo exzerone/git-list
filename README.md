@@ -19,7 +19,7 @@ then run
 npm start
 ```
 
-Please go to http://localhost:1300/ to see the application.
+Please then proceed to http://localhost:1300/ on your browser to see the application running locally.
 
 ## Tech Stack
 
