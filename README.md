@@ -1,6 +1,7 @@
 # Github User List
 
-## demo
+## Demo
+
 
 ![Alt text](./demo.png)
 Feel free to check the [demo site](https://exzerone.github.io/github-list/)
