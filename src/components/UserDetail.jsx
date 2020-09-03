@@ -56,7 +56,9 @@ function UserDetail({ handleClose, ...userData }) {
 							style={{ height: '150px', width: '150px', borderRadius: '25px' }}
 							src={userData.avatar_url}
 						/>
-						<CloseButton onClick={handleClose} className="close_button">X</CloseButton>
+						<CloseButton onClick={handleClose} className="close_button">
+							X
+						</CloseButton>
 					</div>
 					<h3>{`Name: ${userData.name}`}</h3>
 					<div>{`Username: ${userData.login}`}</div>
@@ -66,6 +68,7 @@ function UserDetail({ handleClose, ...userData }) {
 					<div>{`Site Admin: ${userData.site_admin}`}</div>
 					<div>{`Public Repoistories: ${userData.public_repos}`}</div>
 					<div>{`Bio: ${userData.bio}`}</div>
+					<div>{`Blog: ${userData.blog}`}</div>
 				</Body>
 			</Modal>
 		</Overlay>
