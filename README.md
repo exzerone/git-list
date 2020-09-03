@@ -1,10 +1,15 @@
 # Github User List
 
+## demo
+![Alt text](./demo.png)
+
 ## Installation
 
+run the follow command to run the application. 
 ```bash
-run npm start
+npm start
 ```
+Please go to http://localhost:1300/ to see the application.
 
 ## Tech Stack
 
