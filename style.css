@@ -1,5 +1,7 @@
 body{
 	margin: 0;
+	background-color: #f3e8f270;
+	font-family: Arial, sans-serif;
 }
 
 .active {
