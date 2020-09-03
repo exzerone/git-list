@@ -1,5 +1,5 @@
 {
-	"homepage": "https://exzerone.github.io/github-list",
+	"homepage": ".",
 	"name": "github-list-fetcher",
 	"version": "1.0.0",
 	"description": "",
@@ -11,7 +11,7 @@
 		"server-dev": "nodemon server/index.js",
 		"test": "jest",
 		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build"
+		"deploy": "gh-pages -d public/dist"
 	},
 	"author": "Chris Huang",
 	"license": "MIT",
