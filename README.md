@@ -1,10 +1,13 @@
-Github List Fetcher
+# Github User List
 
-require node v12.xx
 
-Tech stack
-React
-styled-components
-github API
-enzyme
-jest
+## Installation
+
+run npm start
+
+
+## Author
+Chris Huang
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
