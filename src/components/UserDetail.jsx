@@ -50,7 +50,7 @@ function UserDetail({ handleClose, ...userData }) {
 		<Overlay className="overlay" onClick={handleClose}>
 			<Modal className="modal" onClick={(e) => e.stopPropagation()}>
 				<Body className="modal_body">
-					<div className="modao_header">
+					<div className="modal_header">
 						<img
 							href="user image"
 							style={{ height: '150px', width: '150px', borderRadius: '25px' }}
