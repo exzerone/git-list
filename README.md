@@ -11,6 +11,11 @@ Feel free to check the [demo site](https://exzerone.github.io/github-list/)
 run the follow command to run the application.
 
 ```bash
+npm install 
+```
+then run 
+
+```bash
 npm start
 ```
 
