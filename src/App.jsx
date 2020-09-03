@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import ReactDOM from 'react-dom';
 import CardList from './components/CardList.jsx';
 import Pagination from './components/Pagination.jsx';
 import { getUsers, getUserDetail } from './github/index';
@@ -26,7 +25,7 @@ const Loading = styled.div`
 	margin: 30px 0;
 `;
 
-function App() {
+ function App() {
 	let [users, setUsers] = useState([]);
 	let [page, setPage] = useState(1);
 	let [isLoading, setIsLoading] = useState(false);
@@ -72,4 +71,4 @@ function App() {
 	);
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+export default App;
