@@ -3,9 +3,10 @@ import styled from 'styled-components';
 
 const UserCard = styled.div`
 	border: 1px solid black;
-	height: 350px;
-	width: 300px;
+	height: 300px;
+	width: 250px;
 	margin: 5px;
+	cursor: pointer;
 `;
 
 const UserTitle = styled.h3`
@@ -20,20 +21,19 @@ const UserDesc = styled.div`
 	padding: 10px;
 `;
 
-function Card({user}){
+function Card({ user, handleClick }) {
 	return (
-		<UserCard className="user_card">
-			<UserTitle className="user_title">username: {user.login}</UserTitle>
+		<UserCard className="user_card" onClick={handleClick}>
+			<UserTitle className="user_title">User: {user.login}</UserTitle>
 			<UserDesc className="user_description">
-				<img alt="avatar" src={user.avatar_url} style={{height: '175px', width: '225px'}}/>
-				<div>
-					<div>Github Url: {user.html_url}</div>
-					<div>Site Admin: {user.site_admin ? 'Yes': 'No'} </div>
-				</div>
+				<img
+					alt="avatar"
+					src={user.avatar_url}
+					style={{ height: '175px', width: '225px' }}
+				/>
 			</UserDesc>
 		</UserCard>
 	);
 }
 
 export default Card;
-
