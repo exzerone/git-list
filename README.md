@@ -2,7 +2,9 @@
 
 ## Installation
 
+```bash
 run npm start
+```
 
 ## Tech Stack
 
