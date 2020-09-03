@@ -25,22 +25,24 @@ const Modal = styled.div`
 	margin: 0 auto;
 `;
 
-const CloseButton = styled.button`
-	position: absolute;
-	top: -24px;
-	right: 0;
-	padding: 5px;
-	border: 0;
-	background: white;
-	color: black;
-	cursor: pointer;
-	font-size: 23px;
-`;
-
 const Body = styled.div`
 	padding: 20px 24px;
 	border-radius: 4px;
 	background-color: #e3dbdb;
+	border-radius: 25px;
+`;
+
+const CloseButton = styled.button`
+	cursor: pointer;
+	position: absolute;
+	right: 20px;
+	padding: 5px;
+	border: 0;
+	height: 30px;
+	width: 30px;
+	background: none;
+	font-size: 15px;
+	-webkit-appearance: none;
 `;
 
 function UserDetail({ handleClose, ...userData }) {
@@ -48,12 +50,16 @@ function UserDetail({ handleClose, ...userData }) {
 		<Overlay className="overlay" onClick={handleClose}>
 			<Modal className="modal" onClick={(e) => e.stopPropagation()}>
 				<Body className="modal_body">
-					<img
-						href="user image"
-						style={{ height: '150px', width: '150px' }}
-						src={userData.avatar_url}
-					></img>
+					<div className="modao_header">
+						<img
+							href="user image"
+							style={{ height: '150px', width: '150px', borderRadius: '25px' }}
+							src={userData.avatar_url}
+						/>
+						<CloseButton onClick={handleClose} className="close_button">X</CloseButton>
+					</div>
 					<h3>{`Name: ${userData.name}`}</h3>
+					<div>{`Username: ${userData.login}`}</div>
 					<div>{`Company: ${userData.company}`}</div>
 					<div>{`Location: ${userData.location}`}</div>
 					<div>{`Type: ${userData.type}`}</div>
