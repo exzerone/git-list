@@ -23,7 +23,6 @@
 		"jest": "^26.4.2",
 		"jest-cli": "^26.4.2",
 		"jest-enzyme": "^7.1.2",
-		"morgan": "^1.9.1",
 		"webpack": "^4.44.1",
 		"webpack-cli": "^3.3.12"
 	},
@@ -38,7 +37,9 @@
 		"styled-components": "^5.1.1"
 	},
 	"jest": {
-		"snapshotSerializers": ["enzyme-to-json/serializer"],
+		"snapshotSerializers": [
+			"enzyme-to-json/serializer"
+		],
 		"moduleFileExtensions": [
 			"js",
 			"jsx"
@@ -46,6 +47,8 @@
 		"setupFiles": [
 			"./src/setupTests.js"
 		],
-		"coverageReporters": ["text"]
+		"coverageReporters": [
+			"text"
+		]
 	}
 }
