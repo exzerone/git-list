@@ -1,13 +1,17 @@
 {
+	"homepage": "https://exzerone.github.io/github-list",
 	"name": "github-list-fetcher",
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
 	"scripts": {
 		"start": "webpack --config ./webpack.config.js -p && nodemon server/index.js",
+		"build": "webpack --config ./webpack.config.js -p",
 		"react-dev": "webpack -d --watch",
 		"server-dev": "nodemon server/index.js",
-		"test": "jest"
+		"test": "jest",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build"
 	},
 	"author": "Chris Huang",
 	"license": "MIT",
@@ -21,6 +25,7 @@
 		"enzyme": "^3.11.0",
 		"enzyme-adapter-react-16": "^1.15.4",
 		"enzyme-to-json": "^3.5.0",
+		"gh-pages": "^3.1.0",
 		"jest": "^26.4.2",
 		"jest-cli": "^26.4.2",
 		"jest-enzyme": "^7.1.2",
