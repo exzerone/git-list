@@ -56,6 +56,9 @@ exports[`UserDetail render without crashing 1`] = `
       <div>
         Bio: undefined
       </div>
+      <div>
+        Blog: undefined
+      </div>
     </styled.div>
   </styled.div>
 </styled.div>
