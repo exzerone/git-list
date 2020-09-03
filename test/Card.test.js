@@ -11,7 +11,7 @@ describe("Card", ()=> {
 	});
 
 	it('renders the user title', ()=>{
-		expect(wrapper.find('.user_title').text()).toEqual(`username: ${data[0]['login']}`);
+		expect(wrapper.find('.user_title').text()).toEqual(`${data[0]['login']}`);
 	});
 });
 
