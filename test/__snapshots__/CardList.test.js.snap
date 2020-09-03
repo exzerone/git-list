@@ -5,6 +5,7 @@ exports[`CardList should render without crashing 1`] = `
   className="user_container"
 >
   <Card
+    handleClick={[Function]}
     key="101"
     user={
       Object {
@@ -30,6 +31,7 @@ exports[`CardList should render without crashing 1`] = `
     }
   />
   <Card
+    handleClick={[Function]}
     key="102"
     user={
       Object {
@@ -55,6 +57,7 @@ exports[`CardList should render without crashing 1`] = `
     }
   />
   <Card
+    handleClick={[Function]}
     key="103"
     user={
       Object {
@@ -80,6 +83,7 @@ exports[`CardList should render without crashing 1`] = `
     }
   />
   <Card
+    handleClick={[Function]}
     key="104"
     user={
       Object {
@@ -105,6 +109,7 @@ exports[`CardList should render without crashing 1`] = `
     }
   />
   <Card
+    handleClick={[Function]}
     key="105"
     user={
       Object {
@@ -130,6 +135,7 @@ exports[`CardList should render without crashing 1`] = `
     }
   />
   <Card
+    handleClick={[Function]}
     key="106"
     user={
       Object {
@@ -155,6 +161,7 @@ exports[`CardList should render without crashing 1`] = `
     }
   />
   <Card
+    handleClick={[Function]}
     key="107"
     user={
       Object {
@@ -180,6 +187,7 @@ exports[`CardList should render without crashing 1`] = `
     }
   />
   <Card
+    handleClick={[Function]}
     key="108"
     user={
       Object {
@@ -205,6 +213,7 @@ exports[`CardList should render without crashing 1`] = `
     }
   />
   <Card
+    handleClick={[Function]}
     key="109"
     user={
       Object {
@@ -230,6 +239,7 @@ exports[`CardList should render without crashing 1`] = `
     }
   />
   <Card
+    handleClick={[Function]}
     key="110"
     user={
       Object {
@@ -255,6 +265,7 @@ exports[`CardList should render without crashing 1`] = `
     }
   />
   <Card
+    handleClick={[Function]}
     key="111"
     user={
       Object {
@@ -280,6 +291,7 @@ exports[`CardList should render without crashing 1`] = `
     }
   />
   <Card
+    handleClick={[Function]}
     key="112"
     user={
       Object {
@@ -305,6 +317,7 @@ exports[`CardList should render without crashing 1`] = `
     }
   />
   <Card
+    handleClick={[Function]}
     key="113"
     user={
       Object {
@@ -330,6 +343,7 @@ exports[`CardList should render without crashing 1`] = `
     }
   />
   <Card
+    handleClick={[Function]}
     key="114"
     user={
       Object {
@@ -355,6 +369,7 @@ exports[`CardList should render without crashing 1`] = `
     }
   />
   <Card
+    handleClick={[Function]}
     key="115"
     user={
       Object {
@@ -380,6 +395,7 @@ exports[`CardList should render without crashing 1`] = `
     }
   />
   <Card
+    handleClick={[Function]}
     key="116"
     user={
       Object {
@@ -405,6 +421,7 @@ exports[`CardList should render without crashing 1`] = `
     }
   />
   <Card
+    handleClick={[Function]}
     key="117"
     user={
       Object {
@@ -430,6 +447,7 @@ exports[`CardList should render without crashing 1`] = `
     }
   />
   <Card
+    handleClick={[Function]}
     key="118"
     user={
       Object {
@@ -455,6 +473,7 @@ exports[`CardList should render without crashing 1`] = `
     }
   />
   <Card
+    handleClick={[Function]}
     key="119"
     user={
       Object {
@@ -480,6 +499,7 @@ exports[`CardList should render without crashing 1`] = `
     }
   />
   <Card
+    handleClick={[Function]}
     key="120"
     user={
       Object {
@@ -505,6 +525,7 @@ exports[`CardList should render without crashing 1`] = `
     }
   />
   <Card
+    handleClick={[Function]}
     key="121"
     user={
       Object {
@@ -530,6 +551,7 @@ exports[`CardList should render without crashing 1`] = `
     }
   />
   <Card
+    handleClick={[Function]}
     key="122"
     user={
       Object {
@@ -555,6 +577,7 @@ exports[`CardList should render without crashing 1`] = `
     }
   />
   <Card
+    handleClick={[Function]}
     key="123"
     user={
       Object {
@@ -580,6 +603,7 @@ exports[`CardList should render without crashing 1`] = `
     }
   />
   <Card
+    handleClick={[Function]}
     key="124"
     user={
       Object {
@@ -605,6 +629,7 @@ exports[`CardList should render without crashing 1`] = `
     }
   />
   <Card
+    handleClick={[Function]}
     key="125"
     user={
       Object {
@@ -630,6 +655,7 @@ exports[`CardList should render without crashing 1`] = `
     }
   />
   <Card
+    handleClick={[Function]}
     key="126"
     user={
       Object {
@@ -655,6 +681,7 @@ exports[`CardList should render without crashing 1`] = `
     }
   />
   <Card
+    handleClick={[Function]}
     key="127"
     user={
       Object {
@@ -680,6 +707,7 @@ exports[`CardList should render without crashing 1`] = `
     }
   />
   <Card
+    handleClick={[Function]}
     key="128"
     user={
       Object {
@@ -705,6 +733,7 @@ exports[`CardList should render without crashing 1`] = `
     }
   />
   <Card
+    handleClick={[Function]}
     key="129"
     user={
       Object {
@@ -730,6 +759,7 @@ exports[`CardList should render without crashing 1`] = `
     }
   />
   <Card
+    handleClick={[Function]}
     key="130"
     user={
       Object {

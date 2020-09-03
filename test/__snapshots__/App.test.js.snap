@@ -12,16 +12,13 @@ exports[`App should render without crashing 1`] = `
   <styled.div
     className="content_container"
   >
-    <h2>
-      Number Of Users Per Page: 
-      0
-    </h2>
     <Pagination
       handleClick={[Function]}
       page={1}
       totalPages={20}
     />
     <CardList
+      handleUserClick={[Function]}
       list={Array []}
     />
   </styled.div>

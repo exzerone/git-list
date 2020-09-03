@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserDetail render without crashing 1`] = `
+<styled.div
+  className="overlay"
+  onClick={[MockFunction]}
+>
+  <styled.div
+    className="modal"
+    onClick={[Function]}
+  >
+    <styled.div
+      className="modal_body"
+    >
+      <div
+        className="modal_header"
+      >
+        <img
+          href="user image"
+          style={
+            Object {
+              "borderRadius": "25px",
+              "height": "150px",
+              "width": "150px",
+            }
+          }
+        />
+        <styled.button
+          className="close_button"
+          onClick={[MockFunction]}
+        >
+          X
+        </styled.button>
+      </div>
+      <h3>
+        Name: undefined
+      </h3>
+      <div>
+        Username: undefined
+      </div>
+      <div>
+        Company: undefined
+      </div>
+      <div>
+        Location: undefined
+      </div>
+      <div>
+        Type: undefined
+      </div>
+      <div>
+        Site Admin: undefined
+      </div>
+      <div>
+        Public Repoistories: undefined
+      </div>
+      <div>
+        Bio: undefined
+      </div>
+    </styled.div>
+  </styled.div>
+</styled.div>
+`;
