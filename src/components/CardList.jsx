@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Card from './Card.jsx';
 import styled from 'styled-components';
 
@@ -9,16 +9,20 @@ const Container = styled.div`
 	align-self: center;
 `;
 
-function CardList({list}){
+function CardList({ list, handleUserClick }) {
 	return (
 		<Container className="user_container">
-			{
-				list.map((user) => (
-					<Card key={user.id} user={user}/>
-				))
-			}
+			{list.map((user) => (
+				<Card
+					handleClick={() => {
+						handleUserClick(user.login);
+					}}
+					key={user.id}
+					user={user}
+				/>
+			))}
 		</Container>
-	)
+	);
 }
 
 export default CardList;
