@@ -4,7 +4,12 @@ import styled from 'styled-components';
 const Page = styled.button`
 	height: 40px;
 	width: 40px;
+	border-radius: 5px;
 	cursor: pointer;
+	border: 0.5px solid grey;
+	&:hover{
+		background-color: lightblue;
+	}
 `;
 
 const PageRow = styled.div`

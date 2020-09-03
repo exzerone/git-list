@@ -8,12 +8,13 @@ import styled from 'styled-components';
 
 const Title = styled.h1`
 	text-align: center;
-	background-color: black;
-	color: white;
+	background-color: #b6ffdf;
+	color: black;
 	padding: 25px;
 	position: relative;
 	top: 1px;
 	margin-top: 0px;
+	border-radius: 25px;
 `;
 
 const ContentContainer = styled.div`
@@ -48,7 +49,6 @@ function App() {
 		<div id="App">
 			<Title className="title">Github Users List</Title>
 			<ContentContainer className="content_container">
-				<h2>Number Of Users Per Page: {users.length}</h2>
 				{isLoading ? (
 					<Loading className="loading">Loading...</Loading>
 				) : (
