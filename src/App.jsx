@@ -30,7 +30,7 @@ const Loading = styled.div`
 	let [page, setPage] = useState(1);
 	let [isLoading, setIsLoading] = useState(false);
 	let [showModal, setShowModal] = useState(false);
-	let [userDtail, setUserDetail] = useState({});
+	let [userDetail, setUserDetail] = useState({});
 
 	useEffect(() => {
 		getUsers(30 * page - 30, 30, setIsLoading, setUsers);
@@ -63,7 +63,7 @@ const Loading = styled.div`
 						handleClose={() => {
 							setShowModal(false);
 						}}
-						{...userDtail}
+						{...userDetail}
 					/>
 				) : null}
 			</ContentContainer>
