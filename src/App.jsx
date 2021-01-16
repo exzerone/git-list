@@ -26,11 +26,11 @@ const Loading = styled.div`
 `;
 
  function App() {
-	let [users, setUsers] = useState([]);
-	let [page, setPage] = useState(1);
-	let [isLoading, setIsLoading] = useState(false);
-	let [showModal, setShowModal] = useState(false);
-	let [userDetail, setUserDetail] = useState({});
+	const [users, setUsers] = useState([]);
+	const [page, setPage] = useState(1);
+	const [isLoading, setIsLoading] = useState(false);
+	const [showModal, setShowModal] = useState(false);
+	const [userDetail, setUserDetail] = useState({});
 
 	useEffect(() => {
 		getUsers(30 * page - 30, 30, setIsLoading, setUsers);
